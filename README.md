@@ -26,7 +26,7 @@ All code is written, simulated, and tested using tools like **Icarus Verilog**, 
 
 ---
 
-## 🌐 Online Simulation
+### 🌐 Online Simulation
 
 You can also run and visualize this project using [EDAPlayground](https://www.edaplayground.com/):
 
