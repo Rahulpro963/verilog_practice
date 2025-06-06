@@ -16,7 +16,6 @@ All code is written, simulated, and tested using tools like **Icarus Verilog**, 
    ```bash
    iverilog -o and_sim and_gate.v and_gate_test.v
    vvp and_sim
-````
 
 3. View waveform:
 
@@ -26,7 +25,7 @@ All code is written, simulated, and tested using tools like **Icarus Verilog**, 
 
 ---
 
-### 🌐 Online Simulation
+## 🌐 Online Simulation
 
 You can also run and visualize this project using [EDAPlayground](https://www.edaplayground.com/):
 
