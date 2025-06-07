@@ -1,0 +1,25 @@
+[2025-06-07 06:54:04 UTC] iverilog '-Wall' '-g2012' design.sv testbench.sv  && unbuffer vvp a.out  
+A ^ B ^ C = Y
+VCD info: dumpfile xor_gate.vcd opened for output.
+At time                    0 : a=0,b=0,c=0,y=0
+At time                   10 : a=0,b=0,c=1,y=1
+At time                   20 : a=0,b=1,c=0,y=1
+At time                   30 : a=0,b=1,c=1,y=0
+At time                   40 : a=1,b=0,c=0,y=1
+At time                   50 : a=1,b=0,c=1,y=0
+At time                   60 : a=1,b=1,c=0,y=0
+At time                   70 : a=1,b=1,c=1,y=1
+testbench.sv:22: $finish called at 80 (1s)
+Creating result.zip...
+  adding: a.out (deflated 78%)
+  adding: xor_gate.vcd (deflated 52%)
+  adding: work/ (stored 0%)
+  adding: testbench.sv (deflated 57%)
+  adding: design.sv (deflated 17%)
+  adding: ACCELLERA_OVL_VHDL_LIB/ (stored 0%)
+  adding: run.sh (deflated 33%)
+  adding: .bash_profile (deflated 21%)
+  adding: .bash_logout (stored 0%)
+  adding: .bashrc (deflated 23%)
+[2025-06-07 06:54:05 UTC] Waiting for download...
+Done
