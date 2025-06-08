@@ -1,0 +1,54 @@
+#! /usr/local/bin/vvp
+:ivl_version "12.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/usr/local/lib/ivl/system.vpi";
+:vpi_module "/usr/local/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/local/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/local/lib/ivl/v2005_math.vpi";
+:vpi_module "/usr/local/lib/ivl/va_math.vpi";
+:vpi_module "/usr/local/lib/ivl/v2009.vpi";
+S_0x39b4650 .scope package, "$unit" "$unit" 2 1;
+ .timescale 0 0;
+S_0x398fe50 .scope module, "not_thru_nandtb" "not_thru_nandtb" 3 1;
+ .timescale 0 0;
+v0x39d86e0_0 .var "b", 0 0;
+v0x39d87b0_0 .net "c", 0 0, L_0x39d8970;  1 drivers
+S_0x398ffe0 .scope module, "uut" "not_thru_nand" 3 5, 4 1 0, S_0x398fe50;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x39d8880 .functor AND 1, v0x39d86e0_0, v0x39d86e0_0, C4<1>, C4<1>;
+L_0x39d8970 .functor NOT 1, L_0x39d8880, C4<0>, C4<0>, C4<0>;
+v0x39901b0_0 .net *"_ivl_0", 0 0, L_0x39d8880;  1 drivers
+v0x39d84f0_0 .net "a", 0 0, v0x39d86e0_0;  1 drivers
+v0x39d85b0_0 .net "y", 0 0, L_0x39d8970;  alias, 1 drivers
+    .scope S_0x398fe50;
+T_0 ;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x39d86e0_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x39d86e0_0, 0, 1;
+    %delay 10, 0;
+    %vpi_call/w 3 12 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+    .scope S_0x398fe50;
+T_1 ;
+    %vpi_call/w 3 16 "$monitor", "At time %t : a=%b, y=%b", $time, v0x39d86e0_0, v0x39d87b0_0 {0 0 0};
+    %end;
+    .thread T_1;
+    .scope S_0x398fe50;
+T_2 ;
+    %vpi_call/w 3 20 "$dumpfile", "not_thru_nand.vcd" {0 0 0};
+    %vpi_call/w 3 21 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x398fe50 {0 0 0};
+    %end;
+    .thread T_2;
+# The file index is used to find the file name in the following table.
+:file_names 5;
+    "N/A";
+    "<interactive>";
+    "-";
+    "testbench.sv";
+    "design.sv";
