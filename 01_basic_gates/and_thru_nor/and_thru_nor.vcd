@@ -1,0 +1,52 @@
+$date
+	Sun Jun  8 01:02:21 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module and_thru_nortb $end
+$var wire 1 ! s $end
+$var reg 1 " p $end
+$var reg 1 # q $end
+$var reg 1 $ r $end
+$scope module uut $end
+$var wire 1 " a $end
+$var wire 1 # b $end
+$var wire 1 $ c $end
+$var wire 1 ! y $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0$
+0#
+0"
+0!
+$end
+#10000
+1$
+#20000
+0$
+1#
+#30000
+1$
+#40000
+0$
+0#
+1"
+#50000
+1$
+#60000
+0$
+1#
+#70000
+1!
+1$
+#80000
