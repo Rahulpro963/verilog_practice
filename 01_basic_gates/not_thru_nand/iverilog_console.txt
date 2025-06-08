@@ -1,0 +1,9 @@
+[2025-06-08 03:53:47 UTC] iverilog '-Wall' '-g2012' design.sv testbench.sv  && unbuffer vvp a.out  
+VCD info: dumpfile not_thru_nand.vcd opened for output.
+At time                    0 : a=0, y=1
+At time                   10 : a=1, y=0
+testbench.sv:12: $finish called at 20 (1s)
+Finding VCD file...
+./not_thru_nand.vcd
+[2025-06-08 03:53:47 UTC] Opening EPWave...
+Done
