@@ -1,0 +1,17 @@
+[2025-06-08 05:56:14 UTC] iverilog '-Wall' '-g2012' design.sv testbench.sv  && unbuffer vvp a.out  
+testbench.sv:1: warning: timescale for or_using_nandtb inherited from another file.
+design.sv:1: ...: The inherited timescale is here.
+VCD info: dumpfile or_using_nand.vcd opened for output.
+At time                    0 : a=0,b=0,c=0,y=0
+At time                10000 : a=0,b=0,c=1,y=1
+At time                20000 : a=0,b=1,c=0,y=1
+At time                30000 : a=0,b=1,c=1,y=1
+At time                40000 : a=1,b=0,c=0,y=1
+At time                50000 : a=1,b=0,c=1,y=1
+At time                60000 : a=1,b=1,c=0,y=1
+At time                70000 : a=1,b=1,c=1,y=1
+testbench.sv:20: $finish called at 80000 (1ps)
+Finding VCD file...
+./or_using_nand.vcd
+[2025-06-08 05:56:14 UTC] Opening EPWave...
+Done
